@@ -19,7 +19,7 @@ composer update
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:fixture:load
 ```
-##API routes
+## API routes
 
 **Добавление**
 ```php
@@ -40,13 +40,11 @@ POST http://localhost:8081/author/create
 **Список книг.** Для вывода необходимого количества данных используется GET параметр count(по умолчанию 10 книг).
 ```php
 GET http://localhost:8081/book[?count=X]
-// Формат данных
 
 ```
 
 **Поиск книги.**
 ```php
 GET http://localhost:8081/book/search?query=Book_name
-// Формат данных
 
 ```
